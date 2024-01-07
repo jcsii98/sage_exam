@@ -32,9 +32,9 @@ export default function JobThumbnail(props) {
             </div>
           </div>
 
-          <div className="">
+          {/* <div className="">
             <img src={Reject} className="h-[24px] opacity-65" />
-          </div>
+          </div> */}
         </div>
       </div>
     </>

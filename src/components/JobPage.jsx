@@ -8,44 +8,101 @@ export default function JobPage(props) {
         <div className="flex items-start space-x-4">
           <div className="w-20 h-20 bg-white"></div>
           <div className="flex flex-col">
-            <p className="text-slate-700 font-sans font-medium text-xl cursor-pointer">
+            <p className="text-slate-700 font-sans font-medium text-2xl cursor-pointer">
               {jobClicked.job}
             </p>
-            <p className="text-white font-sans font-medium">
+            <p className="text-white font-sans font-medium text-xl">
               {jobClicked.company}
             </p>
-            <p>
+            <p className="text-slate-600 font-sans font-normal text-md">
               {jobClicked.location} ({jobClicked.setup})
             </p>
           </div>
         </div>
-
         <img
           onClick={() => setJobClicked()}
           src={Reject}
-          className="h-[24px] opacity-65"
+          className="h-[24px] opacity-65 cursor-pointer"
         />
       </div>
-      <div className="pt-4 flex flex-col space-y-4">
-        <p className="text-slate-700 font-sans font-medium text-xl">
-          Job Description
-        </p>
-        <p className="">
-          Requirements: Lorem ipsum dolor sit amet, consectetur adipisicing
-          elit. Rem consectetur, magnam officiis magni harum id at ipsum, et
-          vel, sint dolor quibusdam eum distinctio reprehenderit asperiores
-          beatae animi? Sint, eveniet.
-        </p>
-        <p>
-          Qualifications: Lorem ipsum dolor sit amet consectetur, adipisicing
-          elit. Ex mollitia blanditiis facilis, aperiam amet rem dolorem
-          repellendus earum maxime obcaecati eius vero hic aut voluptate quis,
-          eos dolorum, impedit repudiandae.
-        </p>
+      <div className="pt-4 grid grid-cols-2">
+        <div className="flex flex-col space-y-4 border-r-[1px]">
+          <p className="text-slate-700 font-sans font-medium text-2xl">
+            Job Description
+          </p>
+          <p className="max-w-80 text-slate-700">
+            Requirements: Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Rem consectetur, magnam officiis magni harum id at ipsum, et
+            vel, sint dolor quibusdam eum distinctio reprehenderit asperiores
+            beatae animi? Sint, eveniet.
+          </p>
+          <p className="max-w-80 text-slate-700">
+            Qualifications: Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Ex mollitia blanditiis facilis, aperiam amet rem dolorem
+            repellendus earum maxime obcaecati eius vero hic aut voluptate quis,
+            eos dolorum, impedit repudiandae.
+          </p>
+        </div>
+
+        {/* FORM */}
+        {/* <div className="flex flex-col space-y-6">
+          <div className="w-full flex flex-col space-y-4">
+            <div className="flex flex-col">
+              <p>Full Name</p>
+              <input className="py-2 px-2 w-full rounded-md focus:outline-none"></input>
+            </div>
+            <div className="flex flex-col">
+              <p>Address</p>
+              <input className="py-2 px-2 w-full rounded-md focus:outline-none"></input>
+            </div>
+            <div className="flex flex-col">
+              <p>Work Experience</p>
+              <input className="py-2 px-2 w-full rounded-md focus:outline-none"></input>
+            </div>
+            <div className="flex flex-col">
+              <p>Asking Salary</p>
+              <input className="py-2 px-2 w-full rounded-md focus:outline-none"></input>
+            </div>
+          </div>
+          <button className="py-4 px-4 rounded-lg border-2 border-slate-700">
+            Apply
+          </button>
+        </div> */}
+        <div className="mx-auto flex flex-col space-y-4">
+          <p className="text-slate-700 font-sans font-medium text-2xl">
+            Application Form
+          </p>
+          <div className="">
+            <input
+              className="w-80 rounded-md py-2 px-1 focus:outline-none pl-2"
+              placeholder="Name"
+            ></input>
+          </div>
+          <div className="">
+            <input
+              className="w-80 rounded-md py-2 px-1 focus:outline-none pl-2"
+              placeholder="Address"
+            ></input>
+          </div>
+          <div className="">
+            <input
+              className="w-80 rounded-md py-2 px-1 focus:outline-none pl-2"
+              placeholder="Work Experience (Years)"
+            ></input>
+          </div>
+          <div className="">
+            <input
+              className="w-80 rounded-md py-2 px-1 focus:outline-none pl-2"
+              placeholder="Asking Salary (PhP / Month)"
+            ></input>
+          </div>
+          <div>
+            <button className="w-80 py-2 px-2 rounded-lg border-[1.5px] border-slate-700 cursor-pointer hover:bg-slate-700 hover:text-white">
+              Apply
+            </button>
+          </div>
+        </div>
       </div>
-      <button className="py-4 px-4 rounded-lg border-2 border-slate-700">
-        Apply
-      </button>
     </>
   );
 }

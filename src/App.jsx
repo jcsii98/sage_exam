@@ -15,8 +15,8 @@ function App() {
   const [jobClicked, setJobClicked] = useState();
   return (
     <>
-      <div className="h-full flex items-center">
-        <div className="mx-auto xl:w-[1128px] lg:w-[959px]">
+      <div className="h-full pt-20">
+        <div className="mx-auto xl:w-[1128px] lg:w-[959px] md:w-[859px]">
           <div className="flex justify-between space-x-6">
             <div className="rounded-md bg-slate-400 w-[225px] max-h-[385px] px-4">
               <div className="flex flex-col items-center">
@@ -63,8 +63,10 @@ function App() {
 
             <div
               className={`${
-                jobClicked ? "flex-grow" : "xl:w-[555px] lg:w-[387px]"
-              } flex flex-col space-y-6`}
+                jobClicked
+                  ? "flex-grow"
+                  : "xl:w-[555px] lg:w-[387px] md:w-[610px]"
+              } flex flex-col space-y-6 mb-6`}
             >
               {!jobClicked && (
                 <>
@@ -127,7 +129,42 @@ function App() {
                     />
                     <JobThumbnail
                       job="Javascript Developer"
-                      company="GHI Company"
+                      company="XYZ Company"
+                      location="Philippines"
+                      setup="Remote"
+                      setJobClicked={setJobClicked}
+                    />
+                    <JobThumbnail
+                      job="Web Developer"
+                      company="123 Company"
+                      location="Philippines"
+                      setup="Remote"
+                      setJobClicked={setJobClicked}
+                    />
+                    <JobThumbnail
+                      job="Software Engineer"
+                      company="456 Company"
+                      location="Philippines"
+                      setup="Remote"
+                      setJobClicked={setJobClicked}
+                    />
+                    <JobThumbnail
+                      job="Software Engineer"
+                      company="456 Company"
+                      location="Philippines"
+                      setup="Remote"
+                      setJobClicked={setJobClicked}
+                    />
+                    <JobThumbnail
+                      job="Software Engineer"
+                      company="456 Company"
+                      location="Philippines"
+                      setup="Remote"
+                      setJobClicked={setJobClicked}
+                    />
+                    <JobThumbnail
+                      job="Software Engineer"
+                      company="456 Company"
                       location="Philippines"
                       setup="Remote"
                       setJobClicked={setJobClicked}
@@ -138,7 +175,7 @@ function App() {
             </div>
             {!jobClicked && (
               <>
-                <div className="rounded-md bg-slate-400 w-[300px]"></div>
+                <div className="rounded-md bg-slate-400 w-[300px] max-h-[550px] lg:block hidden"></div>
               </>
             )}
           </div>
