@@ -87,11 +87,11 @@ function App() {
                       />
                     </div>
                     <div className="flex space-x-4">
-                      <div className="flex space-x-2 px-4 py-1 rounded-full border-slate-700 border-[1.5px] hover:border-slate-100 hover:text-slate-100 text-slate-700 cursor-pointer">
+                      <div className="flex space-x-2 px-4 py-1 rounded-full border-slate-700 border-[1.5px] hover:bg-slate-700 hover:text-slate-100 hover:border-slate-100 text-slate-700 cursor-pointer">
                         <FaSearch className="h-[24px] opacity-65" />
                         <p className="font-sans font-normal">Self-Employed</p>
                       </div>
-                      <div className="flex space-x-2 px-4 py-1 rounded-full border-slate-700 border-[1.5px] hover:border-slate-100 hover:text-slate-100 text-slate-700 cursor-pointer">
+                      <div className="flex space-x-2 px-4 py-1 rounded-full border-slate-700 border-[1.5px] hover:bg-slate-700 hover:text-slate-100 hover:border-slate-100 text-slate-700 cursor-pointer">
                         <FaSearch className="h-[24px] opacity-65" />
                         <p className="font-sans font-normal">Marketing</p>
                       </div>
