@@ -45,59 +45,36 @@ export default function JobPage(props) {
         </div>
 
         {/* FORM */}
-        {/* <div className="flex flex-col space-y-6">
-          <div className="w-full flex flex-col space-y-4">
-            <div className="flex flex-col">
-              <p>Full Name</p>
-              <input className="py-2 px-2 w-full rounded-md focus:outline-none"></input>
-            </div>
-            <div className="flex flex-col">
-              <p>Address</p>
-              <input className="py-2 px-2 w-full rounded-md focus:outline-none"></input>
-            </div>
-            <div className="flex flex-col">
-              <p>Work Experience</p>
-              <input className="py-2 px-2 w-full rounded-md focus:outline-none"></input>
-            </div>
-            <div className="flex flex-col">
-              <p>Asking Salary</p>
-              <input className="py-2 px-2 w-full rounded-md focus:outline-none"></input>
-            </div>
-          </div>
-          <button className="py-4 px-4 rounded-lg border-2 border-slate-700">
-            Apply
-          </button>
-        </div> */}
-        <div className="mx-auto flex flex-col space-y-4">
+        <div className="flex flex-col space-y-4 pl-4">
           <p className="text-slate-700 font-sans font-medium text-2xl">
             Application Form
           </p>
-          <div className="">
+          <div className="text-sm">
             <input
-              className="w-80 rounded-md py-2 px-1 focus:outline-none pl-2"
+              className="w-[80%] rounded-md py-2 px-1 focus:outline-none pl-2"
               placeholder="Name"
             ></input>
           </div>
-          <div className="">
+          <div className="text-sm">
             <input
-              className="w-80 rounded-md py-2 px-1 focus:outline-none pl-2"
+              className="w-[80%] rounded-md py-2 px-1 focus:outline-none pl-2"
               placeholder="Address"
             ></input>
           </div>
-          <div className="">
+          <div className="text-sm">
             <input
-              className="w-80 rounded-md py-2 px-1 focus:outline-none pl-2"
+              className="w-[80%] rounded-md py-2 px-1 focus:outline-none pl-2"
               placeholder="Work Experience (Years)"
             ></input>
           </div>
-          <div className="">
+          <div className="text-sm">
             <input
-              className="w-80 rounded-md py-2 px-1 focus:outline-none pl-2"
+              className="w-[80%] rounded-md py-2 px-1 focus:outline-none pl-2"
               placeholder="Asking Salary (PhP / Month)"
             ></input>
           </div>
-          <div>
-            <button className="w-80 py-2 px-2 rounded-lg border-[1.5px] border-slate-700 cursor-pointer hover:bg-slate-700 hover:text-white">
+          <div className="text-sm">
+            <button className="w-[80%] py-2 px-2 rounded-lg border-[1.5px] border-slate-700 cursor-pointer hover:bg-slate-700 hover:text-slate-100 hover:border-slate-100">
               Apply
             </button>
           </div>
