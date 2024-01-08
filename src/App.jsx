@@ -16,7 +16,12 @@ function App() {
   const [jobClicked, setJobClicked] = useState();
   return (
     <>
-      <div className="h-full pt-20 flex justify-center">
+      <div className="w-full py-4 bg-slate-400 flex justify-center">
+        <div className="xl:w-[1128px] lg:w-[959px] md:w-[859px]">
+          <p className="text-5xl font-medium text-slate-700">trabaho.ph</p>
+        </div>
+      </div>
+      <div className="h-full pt-6 flex justify-center">
         <div className="xl:w-[1128px] lg:w-[959px] md:w-[859px]">
           <div className="flex justify-between space-x-6">
             <div className="w-[225px] max-h-[385px] px-4 rounded-md bg-slate-400">
